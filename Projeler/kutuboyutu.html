@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website created by Omer Faruk Yildiz With HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            /* Tüm öğelerin kutu modelini border-box olarak ayarlıyoruz */
+            border-style: dashed;
+            /* Kutu kenarlarını kesikli çizgi yapıyoruz */
+            border-width: 3px;
+            /* Kutu kenarlarının kalınlığını 3 piksel olarak ayarlıyoruz */
+            border-color: red;
+            /* Kutu kenarlarının rengini kırmızı yapıyoruz */
+        }
+
+        h1 {
+            font-size: 36px;
+            /* Başlık 1'in yazı boyutunu 36 piksel olarak ayarlıyoruz */
+        }
+
+        h2 {
+            font-size: 30px;
+            /* Başlık 2'nin yazı boyutunu 30 piksel olarak ayarlıyoruz */
+        }
+
+        p {
+            font-size: 18px;
+            /* Paragrafın yazı boyutunu 18 piksel olarak ayarlıyoruz */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Kutu Boyutu</h1>
+    <h2>Kutu boyutlarını ayarlamak</h2>
+    <p>Kutu boyutlarını ayarlamak için width ve height özellikleri kullanılır.</p>
+    <p>width özelliği, kutunun genişliğini belirler. height özelliği ise kutunun yüksekliğini belirler.</p>
+    <p>Örneğin, aşağıdaki CSS kodu, bir kutunun genişliğini 200 piksel ve yüksekliğini 100 piksel olarak ayarlar:</p>
+    <pre>
+            #kutu {
+                width: 200px; /* Kutu genişliğini 200 piksel olarak ayarlıyoruz */
+                height: 100px; /* Kutu yüksekliğini 100 piksel olarak ayarlıyoruz */
+            }
+        </pre>
+    <p>Bu kodu kullanarak, bir kutunun boyutlarını istediğiniz gibi ayarlayabilirsiniz. Ayrıca, width ve height
+        özelliklerine yüzde (%) değerleri de verebilirsiniz. Bu durumda, kutunun boyutları, içeren öğenin boyutlarına
+        göre ayarlanır.</p>
+    <p>Örneğin, aşağıdaki CSS kodu, bir kutunun genişliğini içeren öğenin genişliğinin %50'si ve yüksekliğini içeren
+        öğenin yüksekliğinin %30'u olarak ayarlar:</p>
+    <pre>
+            #kutu {
+                width: 50%; /* Kutu genişliğini içeren öğenin genişliğinin %50'si olarak ayarlıyoruz */
+                height: 30%; /* Kutu yüksekliğini içeren öğenin yüksekliğinin %30'u olarak ayarlıyoruz */
+            }   
+        </pre>
+    <p>Bu kodu kullanarak, bir kutunun boyutlarını içeren öğenin boyutlarına göre ayarlayabilirsiniz. Bu, responsive
+        (duyarlı) tasarımlar oluşturmak için özellikle faydalıdır.</p>
+
+</body>
+
+</html>

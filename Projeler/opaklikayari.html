@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website created by Omer Faruk Yildiz With HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .my-div {
+            opacity: 0.2;
+        }
+
+        #kutu1 {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+
+        #resim1 {
+            position: relative;
+            top: -90px;
+            opacity: 0.5;
+            /* Resmin opaklık ayarını %50 yapar */
+        }
+
+        #resim1:hover {
+            opacity: 1;
+            /* Resmin üzerine gelindiğinde opaklık %100 olur */
+        }
+
+        #resim1:active {
+            opacity: 0.3;
+            /* Resme tıklandığında opaklık %30 olur */
+        }
+
+        #resim1:focus {
+            opacity: 0.7;
+            /* Resim odaklandığında opaklık %70 olur */
+        }
+
+        #resim1:disabled {
+            opacity: 0.1;
+            /* Resim devre dışı bırakıldığında opaklık %10 olur */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kutu1">
+        <h1>Opaklık Ayarı</h1>
+        <p>Bu sayfada, HTML ve CSS kullanarak opaklık ayarını nasıl yapabileceğinizi göstermek istiyorum.</p>
+        <p>Opaklık, bir öğenin ne kadar saydam olduğunu belirler. Opaklık değeri 0 ile 1 arasında olabilir. 0 tamamen
+            saydam, 1 ise tamamen opaktır.</p>
+        <p>Örneğin, aşağıdaki CSS kodu bir div öğesinin opaklığını %50 yapar:</p>
+        <pre>
+                .my-div {
+                    opacity: 0.5;
+                }
+            </pre>
+        <p>Bu kodu kullanarak, .my-div sınıfına sahip bir div öğesi yarı saydam olacaktır.</p>
+    </div>
+    <div class="my-div">
+        <p>Bu div öğesi opaklık ayarı uygulanmış bir örnektir.</p>
+    </div>
+
+    <img id="resim1" src="https://www.w3schools.com/css/img_lights.jpg" alt="Opaklık Ayarı Örneği">
+
+</body>
+
+</html>

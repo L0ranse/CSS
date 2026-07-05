@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website created by Omer Faruk Yildiz With HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Tüm elemanlarda kutu modelini daha düzenli hale getirir. */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Sayfayı ortalar ve temel arka planı belirler. */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #e8f0ff, #f7f9fc);
+            color: #1f2937;
+        }
+
+        /* Ziyaret edilmemiş bağlantı rengi. */
+        a:link {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        /* Ziyaret edilmiş bağlantı rengi. */
+        a:visited {
+            color: #7c3aed;
+        }
+
+        /* Üzerine gelindiğinde bağlantı rengi. */
+        a:hover {
+            color: #dc2626;
+        }
+
+        /* Tıklama anındaki bağlantı rengi. */
+        a:active {
+            color: #f59e0b;
+        }
+
+        /* Ana içerik kutusu: bağlantıları bir arada tutar. */
+        #link-container {
+            width: min(900px, calc(100% - 32px));
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            border-radius: 18px;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+            text-align: center;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Sayfa başlığının biçimi. */
+        nav h1 {
+            font-size: 42px;
+            margin: 0 0 12px;
+            color: #0f172a;
+        }
+
+        /* Açıklama metninin biçimi. */
+        nav p {
+            font-size: 18px;
+            margin: 0 0 28px;
+            color: #475569;
+        }
+
+        /* Linkleri yan yana dizen kapsayıcı. */
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        /* Linkleri buton gibi gösterir. */
+        nav a {
+            font-size: 16px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            background: #eff6ff;
+            border: 1px solid #dbeafe;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        /* Hover sırasında küçük bir görsel hareket verir. */
+        nav a:hover {
+            background: #dbeafe;
+            transform: translateY(-2px);
+            /* Hover sırasında küçük bir yukarı kaydırma efekti ekler. */
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Ana gezinme alanı -->
+    <nav id="link-container">
+        <!-- Ana başlık -->
+        <h1>My Website</h1>
+        <!-- Kısa açıklama -->
+        <p>Welcome to my website!</p>
+        <!-- Sayfa bağlantıları -->
+        <div class="links">
+            <!-- Form sayfasına gider -->
+            <a href="form.html">Go to Form Page</a>
+            <!-- Liste sayfasına gider -->
+            <a href="liste.html">Go to List Page</a>
+            <!-- Overview sayfasına gider -->
+            <a href="overview.html">Go to Overview Page</a>
+            <!-- Fotoğraf galerisine gider -->
+            <a href="photos.html">Go to Photo Gallery Page</a>
+            <!-- Opaklık ayarı örneğine gider -->
+            <a href="opaklikayari.html">Go to Opaklık Kayarı Page</a>
+            <!-- Display örneğine gider -->
+            <a href="display.html">Go to Display Page</a>
+        </div>
+    </nav>
+</body>
+
+</html>

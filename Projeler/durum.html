@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Durum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        a:hover {
+            color: red;
+            /* Bağlantıya fareyle gelindiğinde renk değişir */
+        }
+
+        a:active {
+            color: blue;
+            /* Bağlantıya tıklandığında renk değişir */
+        }
+
+        a:visited {
+            color: green;
+            /* Ziyaret edilmiş bağlantılar için renk */
+        }
+
+        a:link {
+            text-decoration: none;
+            /* bağlantıların altındaki yazıyı kaldırmak için: */
+            color: white;
+            /* Henüz ziyaret edilmemiş bağlantılar için renk */
+        }
+
+        #kutu {
+            background-color: darkred;
+            /* Kutunun arka plan rengini belirlemek için */
+            padding: 20px;
+            /* Kutunun içindeki metin ile kutunun kenarları arasındaki boşluk */
+            border-radius: 10px;
+            /* Kutunun köşelerini yuvarlamak için */
+            margin-top: 20px;
+            /* Kutunun üstünde biraz boşluk bırakmak için */
+        }
+
+        #kutu:hover {
+            background-color: red;
+            /* Kutunun üzerine fareyle gelindiğinde arka plan rengini değiştirmek için */
+        }
+
+        #kutu h1 {
+            color: darkblue;
+            /* Kutunun içindeki başlık rengini belirlemek için */
+        }
+
+        #kutu p {
+            color: yellow;
+            /* Kutunun içindeki paragraf metninin rengini belirlemek için */
+        }
+
+        #kutu p:hover {
+            color: cyan;
+            /* Paragrafa fareyle gelindiğinde renk değişir */
+        }
+
+        #kutu p:active {
+            color: magenta;
+            /* Paragrafa tıklandığında renk değişir */
+        }
+
+        #kutu h1:hover {
+            color: lime;
+            /* Başlığa fareyle gelindiğinde renk değişir */
+        }
+
+        #kutu h1:active {
+            color: orange;
+            /* Başlığa tıklandığında renk değişir */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">Ana Sayfa</a> <br>
+    <a href="#">Ben Kimim?</a> <br>
+    <a href="#">Projeler</a> <br>
+    <a href="#">İletişim</a>
+    <div id="kutu">
+        <h1>Durum</h1>
+        <p>Bu sayfa şu anda yapım aşamasındadır. Lütfen daha sonra tekrar kontrol edin.</p>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website created by Omer Faruk Yildiz With HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        p::first-letter {
+            color: red;
+            /* Paragrafın ilk harfinin rengini kırmızı yapar */
+            font-size: 200%;
+            /* Paragrafın ilk harfinin boyutunu normalden iki kat büyük yapar */
+        }
+
+        p::first-line {
+            color: blue;
+            /* Paragrafın ilk satırının rengini mavi yapar */
+            font-weight: bold;
+            /* Paragrafın ilk satırını kalın yapar */
+        }
+
+        p::before {
+            content: "Başlangıç: ";
+            /* Paragrafın başına "Başlangıç: " metnini ekler */
+            color: green;
+            /* Eklenen metnin rengini yeşil yapar */
+        }
+
+        p::after {
+            content: " :Bitiş";
+            /* Paragrafın sonuna " :Bitiş" metnini ekler */
+            color: orange;
+            /* Eklenen metnin rengini turuncu yapar */
+        }
+
+        p::selection {
+            background-color: yellow;
+            /* Seçilen metnin arka plan rengini sarı yapar */
+            color: black;
+            /* Seçilen metnin rengini siyah yapar */
+        }
+
+        div {
+            background-color: darkred;
+            /* Div'in arka plan rengini belirlemek için */
+            padding: 20px;
+            /* Div'in içindeki metin ile div'in kenarları arasındaki boşluk */
+            border-radius: 10px;
+            /* Div'in köşelerini yuvarlamak için */
+            margin-top: 20px;
+            /* Div'in üstünde biraz boşluk bırakmak için */
+        }
+
+        div::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Div'in arka planını yarı saydam siyah yapar */
+        }
+
+        div::marker {
+            color: yellow;
+            /* Div içindeki listelerin madde işaretlerinin rengini sarı yapar */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Seçiciler Kısmı</h1>
+        <p>Bu bölümde CSS seçicilerini öğreneceksiniz.</p>
+        <h2>Başlık 2</h2>
+        <p>Bu bir paragraf.</p>
+        <h3>Başlık 3</h3>
+        <p>Bu bir başka paragraf.</p>
+        <h4>Başlık 4</h4>
+        <p>Bu da bir başka paragraf.</p>
+        <h5>Başlık 5</h5>
+        <p>Bu da bir başka paragraf.</p>
+        <h6>Başlık 6</h6>
+        <p>Bu da bir başka paragraf.</p>
+    </div>
+</body>
+
+</html>

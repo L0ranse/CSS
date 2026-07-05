@@ -1,0 +1,61 @@
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: darkgray;
+            margin: 20px;
+        }
+
+
+        #unique {
+            color: red;
+            font-weight: bold;
+        }
+
+        li {
+
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: green;
+            font-family: Arial, sans-serif;
+        }
+
+        div p {
+            color: purple;
+            font-style: italic;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        form::after {
+            content: "Bu form, kullanıcı geri bildirimlerini toplamak için tasarlanmıştır.";
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        ::selection {
+            background: orange;
+            color: white;
+        }
+
+        ::-moz-selection {
+            background: orange;
+            color: white;
+        }

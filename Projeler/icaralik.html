@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website created by Omer Faruk Yildiz With HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            /* Tüm elementlerin kutu modelini border-box olarak ayarlamak için */
+            background-color: black;
+            /* Tüm elementlerin arka plan rengini siyah yapmak için */
+        }
+
+        #kutu1 {
+            width: 200px;
+            /* Kutunun genişliğini belirlemek için */
+            height: 125px;
+            /* Kutunun yüksekliğini belirlemek için */
+            background-color: lightblue;
+            /* Kutunun arka plan rengini belirlemek için */
+            border-style: solid;
+            /* Kutunun kenarlık stilini belirlemek için */
+            border-width: 3px;
+            /* Kutunun kenarlık kalınlığını belirlemek için */
+            border-color: black;
+            /* Kutunun kenarlık rengini belirlemek için */
+            /* padding: 10px 20px; */
+            /* Kutunun içindeki metin ile kutunun kenarları arasındaki boşluk */
+            margin: 20px;
+            /* Kutunun çevresindeki boşluk */
+            background-image: url('https://www.w3schools.com/css/img_lights.jpg');
+            background-size: cover;
+            /* Arka plan resminin kutuyu tamamen kaplamasını sağlamak için */
+            background-position: center;
+            /* Arka plan resminin kutunun ortasında konumlanmasını sağlamak için */
+            background-position-x: 20px;
+            /* Arka plan resminin yatay konumunu 20 piksel sağa kaydırmak için */
+            background-position-y: 10px;
+            /* Arka plan resminin dikey konumunu 10 piksel aşağı kaydırmak için */
+            background-repeat: no-repeat;
+            /* Arka plan resminin tekrarlanmamasını sağlamak için */
+            background-attachment: local;
+            /* Arka plan resminin kutunun içeriğiyle birlikte kaymasını sağlamak için */
+        }
+
+        #kutu2 {
+            width: 150px;
+            height: 100px;
+            background-color: lightcoral;
+            border-style: dashed;
+            border-width: 2px;
+            border-color: red;
+            padding: 15px 10px;
+            /* Kutunun içindeki metin ile kutunun kenarları arasındaki boşluk */
+            margin: 30px;
+            /* Kutunun çevresindeki boşluk */
+            margin-top: auto;
+            /* Kutunun üst kısmındaki boşluğu otomatik olarak ayarlamak için */
+            margin-bottom: auto;
+            /* Kutunun alt kısmındaki boşluğu otomatik olarak ayarlamak için */
+            margin-left: auto;
+            /* Kutunun sol tarafındaki boşluğu otomatik olarak ayarlamak için */
+            margin-right: auto;
+            /* Kutunun sağ tarafındaki boşluğu otomatik olarak ayarlamak için */
+            margin: 0 auto;
+            /* Kutunun yatay olarak ortalanması için */
+            background-image: url('https://www.w3schools.com/css/img_forest.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: local;
+            /* Arka plan resminin kutunun içeriğiyle birlikte kaymasını sağlamak için */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kutu1">
+        This is a box created with HTML and CSS. And this is a sample text inside the box. You can customize the content
+        and style as needed. Feel free to modify the dimensions, colors, and text to suit your preferences.
+    </div>
+
+
+    <div id="kutu2">
+        This is another box created with HTML and CSS.
+    </div>
+</body>
+
+</html>

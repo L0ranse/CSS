@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website created by Omer Faruk Yildiz With HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: green;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            padding: 20px;
+            /* Formun içindeki metin ile formun kenarları arasındaki boşluk */
+            border-radius: 10px;
+            /* Formun köşelerini yuvarlamak için */
+            margin-top: 20px;
+            /* Formun üstünde biraz boşluk bırakmak için */
+            margin-left: auto;
+            margin-right: auto;
+            /* Formu yatayda ortalamak için */
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            /* Giriş alanlarının genişliğini formun genişliğine uyacak şekilde ayarlar */
+            padding: 10px;
+            /* Giriş alanlarının içindeki metin ile giriş alanının kenarları arasındaki boşluk */
+            margin-bottom: 15px;
+            /* Giriş alanlarının altına boşluk bırakmak için */
+            border: none;
+            /* Giriş alanlarının kenarlığını kaldırmak için */
+            border-radius: 5px;
+            /* Giriş alanlarının köşelerini yuvarlamak için */
+            background-color: pink;
+            /* Giriş alanlarının arka plan rengini belirlemek için */
+            color: red;
+            /* Giriş alanlarındaki metnin rengini belirlemek için */
+        }
+
+        input[type="submit"] {
+            background-color: darkred;
+            /* Gönder düğmesinin arka plan rengini belirlemek için */
+            color: white;
+            /* Gönder düğmesindeki metnin rengini belirlemek için */
+            padding: 10px 20px;
+            /* Gönder düğmesinin içindeki metin ile düğmenin kenarları arasındaki boşluk */
+            border: none;
+            /* Gönder düğmesinin kenarlığını kaldırmak için */
+            border-radius: 5px;
+            /* Gönder düğmesinin köşelerini yuvarlamak için */
+            cursor: pointer;
+            /* Fare imlecini gönder düğmesi üzerinde bir el simgesi yapar */
+        }
+
+        input[type="submit"]:hover {
+            background-color: red;
+            /* Gönder düğmesinin üzerine fareyle gelindiğinde arka plan rengini değiştirmek için */
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+            /* Radyo düğmeleri ve onay kutuları ile metin arasına boşluk bırakmak için */
+
+        }
+
+        input[type="radio"]:hover,
+        input[type="checkbox"]:hover {
+            transform: scale(1.2);
+            /* Radyo düğmeleri ve onay kutuları üzerine fareyle gelindiğinde boyutunu artırmak için */
+        }
+
+        input[type="radio"]:checked,
+        input[type="checkbox"]:checked {
+            background-color: red;
+            /* Seçili radyo düğmeleri ve onay kutularının arka plan rengini değiştirmek için */
+        }
+
+        input[type="radio"]:checked:hover,
+        input[type="checkbox"]:checked:hover {
+            background-color: darkred;
+            /* Seçili radyo düğmeleri ve onay kutuları üzerine fareyle gelindiğinde arka plan rengini değiştirmek için */
+        }
+
+        input[type="radio"]:disabled,
+        input[type="checkbox"]:disabled {
+            background-color: gray;
+            /* Devre dışı bırakılmış radyo düğmeleri ve onay kutularının arka plan rengini değiştirmek için */
+            cursor: not-allowed;
+            /* Devre dışı bırakılmış radyo düğmeleri ve onay kutuları üzerinde fare imlecini "yasak" simgesi yapar */
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        Ad Soyad: <input type="text" name="adSoyad"><br><br>
+        E-posta: <input type="email" name="email"><br><br>
+        Şifre: <input type="password" name="sifre"><br><br>
+        Cinsiyet:
+        <input type="radio" name="cinsiyet" value="erkek"> Erkek
+        <input type="radio" name="cinsiyet" value="kadin"> Kadın<br><br>
+        İlgi Alanları:
+        <input type="checkbox" name="ilgiAlanlari" value="spor"> Spor
+        <input type="checkbox" name="ilgiAlanlari" value="muzik"> Müzik
+        <input type="checkbox" name="ilgiAlanlari" value="sanat"> Sanat<br><br>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>

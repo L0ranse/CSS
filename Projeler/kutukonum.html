@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website created by Omer Faruk Yildiz With HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        #buyuk {
+            width: 300px;
+            height: 200px;
+            background-color: cornflowerblue;
+            border-color: chocolate;
+            position: relative;
+            /* Kutunun konumunu göreceli olarak ayarlamak için */
+            top: 10px;
+            /* Kutunun üst tarafındaki boşluğu 10px yapmak için */
+            left: 100px;
+            /* Kutunun sol tarafındaki boşluğu 100px yapmak için */
+            margin: 0 auto;
+            /* Kutunun yatay olarak ortalanması için */
+        }
+
+        #kucuk {
+            width: 150px;
+            height: 50px;
+            background-color: darkgoldenrod;
+            border-color: red;
+            /* position: relative; */
+            /* Kutunun konumunu göreceli olarak ayarlamak için */
+            /* top: 30px; */
+            /* Kutunun üst tarafındaki boşluğu 30px yapmak için */
+            /* left: 50px; */
+            /* Kutunun sol tarafındaki boşluğu 50px yapmak için */
+            /* margin: 0 auto; */
+            /* Kutunun yatay olarak ortalanması için */
+            position: fixed;
+            /* Kutunun konumunu sabit olarak ayarlamak için */
+            right: 0px;
+            /* Kutunun sağ tarafındaki boşluğu 0px yapmak için */
+            bottom: 0px;
+            /* Kutunun alt tarafındaki boşluğu 0px yapmak için */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buyuk">
+        <p>Bu bir büyük kutudur.</p>
+    </div>
+    <div id="kucuk">
+        <p>Bu bir küçük kutudur.</p>
+    </div>
+</body>
+
+</html>
