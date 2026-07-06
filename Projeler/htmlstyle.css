@@ -67,6 +67,8 @@ body {
     border: 2px solid blue;
     background-color: cornflowerblue;
     margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #ust,
@@ -93,7 +95,8 @@ img {
     float: left;
     padding: 15px;
     border: 2px solid red;
-    background: rgba(255, 255, 255, 0.55);
+    background-color: cornsilk;
+    border-radius: 8px;
 
 }
 
@@ -102,4 +105,23 @@ img {
     [class*="col-"] {
         width: 100%;
     }
+}
+
+
+
+/* kutu yükseklikleri */
+#ust {
+    height: 100px;
+}
+
+#menu {
+    height: 80px;
+}
+
+#orta {
+    height: 400px;
+}
+
+#alt {
+    height: 80px;
 }
