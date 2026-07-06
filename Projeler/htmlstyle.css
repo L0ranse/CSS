@@ -1,3 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #eef4ff;
+}
+
 /* kutular sabit genişlikte */
 * {
     box-sizing: border-box;
@@ -63,6 +69,12 @@
     margin: 5px;
 }
 
+#ust,
+#menu,
+#orta {
+    min-height: 70px;
+}
+
 /*satırlar yan yana gelmesin*/
 .row::after {
     content: "";
@@ -81,6 +93,7 @@ img {
     float: left;
     padding: 15px;
     border: 2px solid red;
+    background: rgba(255, 255, 255, 0.55);
 
 }
 
