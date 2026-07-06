@@ -93,7 +93,7 @@ img {
 /*col- yaslama*/
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 4px;
     border: 2px solid red;
     background-color: cornsilk;
     border-radius: 8px;
@@ -111,17 +111,24 @@ img {
 
 /* kutu yükseklikleri */
 #ust {
-    height: 100px;
+    min-height: 100px;
 }
 
 #menu {
-    height: 80px;
+    min-height: 80px;
 }
 
 #orta {
-    height: 400px;
+    min-height: 400px;
 }
 
 #alt {
-    height: 80px;
+    min-height: 80px;
+}
+
+/* sosyal medya ikonları */
+#ikon {
+    width: 50px;
+    float: right;
+    margin-right: 10px;
 }
