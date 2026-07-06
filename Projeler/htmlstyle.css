@@ -132,3 +132,57 @@ img {
     float: right;
     margin-right: 10px;
 }
+
+/* anamenü */
+#menu #anamenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+#menu #anamenu ul li {
+    border: 1px solid blue;
+    width: 25%;
+    float: left;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* 500 px altı ekranlar için */
+@media only screen and (max-width: 500px) {
+    #menu #anamenu ul li {
+        width: 100%;
+    }
+}
+
+/* anamenü linkleri */
+#menu #anamenu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+#menu #anamenu ul li a:hover {
+    background-color: #e4e7ea;
+    color: yellow;
+    border-radius: 5px;
+}
+
+#menu #anamenu ul li a:active,
+#menu #anamenu ul li a:visited {
+    background-color: #e4e7ea;
+    color: yellow;
+    border-radius: 5px;
+}
